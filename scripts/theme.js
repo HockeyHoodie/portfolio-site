@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggle.setAttribute('aria-checked', savedTheme === 'dark' ? 'true' : 'false');
     }
 
-    // Theme toggle click handler
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
